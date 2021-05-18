@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1a202c;
+}
+.textbox
+{
+    margin-top: 200px;
+    margin-left: 150px;
+}
+h1 {
+    font-size: 55px;
+    color: #01fda0;
+    font-family: Roboto, serif;
+}
+h2{
+    font-size: 30px;
+    color: #a0aec0;
+}
+p{
+    font-size: 15px;
+    color: #ffffff;
+
+}
+.container
+{
+    width: 400px;
+    height: 350px;
+    margin-top: -194px;
+    margin-right: 160px;
+    float: right;
+    border-radius: 12px;
+    background-color: #4a5568;
+    text-align: center;
+}
+.form
+{
+    margin-top: 10px;
+    background-color: #4a5568;
+    padding: 20px;
+}
+.form input
+{
+    color: white;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 17px;
+    width: 332px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.login
+{
+    margin-top: 15px;
+    background-color:#2d3748;
+    padding: 16px;
+    width: 100%;
+    border-radius:8px;
+    color: white;
+    font-family: Arial;
+    font-size: 18px;
+}
+.register
+{
+    margin-top: 15px;
+    background-color:#04AA6D;
+    padding: 16px;
+    width: 100%;
+    border-radius:8px;
+    color: white;
+    font-family: Arial;
+    font-size: 18px;
+}

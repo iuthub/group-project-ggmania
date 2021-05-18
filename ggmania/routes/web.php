@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/join', function () {
+Route::get(' ', function () {
     return view('welcome');
 });
 //About our project
