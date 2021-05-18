@@ -15,6 +15,12 @@ class ArticleController extends Controller
     $article->Topic=$request->Topic;
     $article->save();
     }
+    public function showArticle()
+    {
+        $all_articles= Article::get();
 
+        return view('feed', compact('all_articles'));
+
+    }
 }
 
