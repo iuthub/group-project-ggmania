@@ -21,3 +21,7 @@ Route::get('/join', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/add_article', function () {
+    return view('add_article');
+});
