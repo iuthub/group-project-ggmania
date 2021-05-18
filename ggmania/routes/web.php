@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +26,7 @@ Route::get('/about', function () {
 Route::get('/add_article', function () {
     return view('add_article');
 });
+
+
+
+Route::post('/add_article', 'ArticleController@addArticle')->name('addarticle');
