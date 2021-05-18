@@ -8,14 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-<div class="w-4/5 m-auto pt20">
 <form method="post" action="{{route('addarticle')}}">
-@csrf
-    <textarea name="Title"
-    class="py-20 border-b-2 w-full h-60">
-    </textarea><br />
+    @csrf
+    <input type="text" name="Topic" placeholder="Topic"><br/>
+    <input type="text" name="Title" placeholder="Title"><br/>
+    <textarea name="Content" placeholder="Content">
+    </textarea><br/>
     <button type="submit">Add article</button>
 </form>
-</div>
 </body>
 </html>
