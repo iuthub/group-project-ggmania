@@ -34,11 +34,17 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                
-            </div>
-        </div>
+         <div class="footer-content">
+             <ul class="socials">
+                 <li><a href="#"><i class="fa fa-github"></i></a></li>
+             </ul>
+             <ul class="about">
+                 <li><a href="#">About us</a></li>
+             </ul>
+             <ul class="faq">
+                 <li><a href="#">FAQ</a></li>
+             </ul>
+         </div>
     </footer>
     </body>
 </html>
