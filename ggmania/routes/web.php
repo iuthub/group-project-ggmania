@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get(' ', function () {
     return view('welcome');
 });
+Route::get('/register.blade.php', function ()
+{
+    return view('register');
+});
 //About our project
 
 Route::get('/about', function () {

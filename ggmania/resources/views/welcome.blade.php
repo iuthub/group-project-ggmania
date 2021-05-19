@@ -22,23 +22,22 @@
         </div>
     <div class="container">
         <div class="form">
+            <p class="login-text" style="font-size:2em;font-weight: 800;">Log in</p>
             <label>
-                <input type="text" class="text" placeholder="Enter your Email or Username"><br>
+                <input type="text" class="text" placeholder="Enter your Email or Username" required>
             </label>
             <label>
-                <input type="password" class="text" placeholder="Password"><br>
+                <input type="password" class="text" placeholder="Password" required>
             </label>
             <button class="login">Log in</button>
-            <button class="register">Create account</button>
 
         </div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                
-            </div>
+        <div class="login-regiter-text">
+
+            <button class="register"><a href="register.blade.php">Create account</a></button>
+
         </div>
-    </footer>
+
+    </div>
     </body>
 </html>

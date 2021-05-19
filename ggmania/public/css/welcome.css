@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     background-color: #1a202c;
+
 }
 .textbox
 {
@@ -25,7 +26,7 @@ p{
 .container
 {
     width: 400px;
-    height: 350px;
+    height: 400px;
     margin-top: -194px;
     margin-right: 160px;
     float: right;
@@ -39,10 +40,15 @@ p{
     background-color: #4a5568;
     padding: 20px;
 }
+.form p
+{
+    margin: -10px;
+    background-color: #4a5568;
+}
 .form input
 {
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 8px;
     padding: 17px;
     width: 332px;
@@ -57,17 +63,93 @@ p{
     width: 100%;
     border-radius:8px;
     color: white;
-    font-family: Arial;
+    font-family: Arial, serif;
     font-size: 18px;
 }
-.register
+.login-regiter-text button
 {
     margin-top: 15px;
     background-color:#04AA6D;
     padding: 16px;
-    width: 100%;
+    width: 330px;
     border-radius:8px;
     color: white;
-    font-family: Arial;
+    font-family: Arial, serif;
     font-size: 18px;
+    text-decoration: none;
+}
+.login-regiter-text a
+{
+    margin-top: 15px;
+    background-color:#04AA6D;
+    padding: 16px;
+    width: 330px;
+    border-radius:8px;
+    color: white;
+    font-family: Arial, serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+.login-regiter-text
+{
+    margin-top: -30px;
+    background-color: #4a5568;
+    padding: 20px;
+}
+.Registration{
+    width: 400px;
+    height: 700px;
+    margin-top: -328px;
+    margin-right: 160px;
+    float: right;
+    border-radius: 12px;
+    background-color: #4a5568;
+    text-align: center;
+}
+form
+{
+    margin-top: 10px;
+    background-color: #4a5568;
+    padding: 20px;
+}
+form p
+{
+    margin: -10px 10px 10px;
+    background-color: #4a5568;
+}
+form input
+{
+    color: white;
+    margin-top: 2px;
+    border-radius: 8px;
+    padding: 10px;
+    width: 335px;
+    height: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.Registration button
+{
+    margin-top: 15px;
+    background-color:#04AA6D;
+    padding: 16px;
+    width: 330px;
+    border-radius:8px;
+    color: white;
+    font-family: Arial, serif;
+    font-size: 18px;
+
+}
+.Registration .register a
+{
+    margin-top: 15px;
+    background-color:#04AA6D;
+    padding: 16px;
+    width: 330px;
+    border-radius:8px;
+    color: white;
+    font-family: Arial, serif;
+    font-size: 18px;
+    text-decoration: none;
 }

@@ -2,7 +2,7 @@
     <table>
 <thead>
 <td>Title</td>
-<td>Content</td>
+<td>Cont</td>
 <td>Created at</td>
 <td>Topic</td>
 
