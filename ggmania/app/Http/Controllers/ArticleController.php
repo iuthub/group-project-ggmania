@@ -17,7 +17,7 @@ class ArticleController extends Controller
     }
     public function showArticle()
     {
-        $all_articles= Article::get();
+        $all_articles= Article::orderBy('id', 'DESC')->get();
 
         return view('feed', compact('all_articles'));
 

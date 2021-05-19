@@ -10,7 +10,13 @@
 <body>
 <form method="post" action="{{route('addarticle')}}">
     @csrf
-    <input type="text" name="Topic" placeholder="Topic"><br/>
+
+    <select name="Topic" >
+        <option value="Game development">Game development</option>
+        <option value="Mobile Gaming">Mobile Gaming</option>
+        <option value="PC gaming">PC gaming</option>
+    </select>
+
     <input type="text" name="Title" placeholder="Title"><br/>
     <textarea name="Content" placeholder="Content">
     </textarea><br/>
