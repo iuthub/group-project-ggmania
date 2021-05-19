@@ -27,6 +27,14 @@ Route::get('/add_article', function () {
     return view('add_article');
 });
 
+Route::post('/add_article', 'ArticleController@addArticle')->name('addarticle');
+
 Route::get('/feed', 'ArticleController@showArticle');
 
-Route::post('/add_article', 'ArticleController@addArticle')->name('addarticle');
+
+
+Route::get('/feedback', function () {
+    return view('/feedback');
+});
+
+Route::post('/feedback', 'FeedbackController@Feedback')->name('feedback');
