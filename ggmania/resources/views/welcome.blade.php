@@ -22,29 +22,22 @@
         </div>
     <div class="container">
         <div class="form">
+            <p class="login-text" style="font-size:2em;font-weight: 800;">Log in</p>
             <label>
-                <input type="text" class="text" placeholder="Enter your Email or Username"><br>
+                <input type="text" class="text" placeholder="Enter your Email or Username" required>
             </label>
             <label>
-                <input type="password" class="text" placeholder="Password"><br>
+                <input type="password" class="text" placeholder="Password" required>
             </label>
             <button class="login">Log in</button>
-            <button class="register">Create account</button>
 
         </div>
+        <div class="login-regiter-text">
+
+            <button class="register"><a href="register.blade.php">Create account</a></button>
+
+        </div>
+
     </div>
-    <footer class="footer">
-         <div class="footer-content">
-             <ul class="socials">
-                 <li><a href="#"><i class="fa fa-github"></i></a></li>
-             </ul>
-             <ul class="about">
-                 <li><a href="#">About us</a></li>
-             </ul>
-             <ul class="faq">
-                 <li><a href="#">FAQ</a></li>
-             </ul>
-         </div>
-    </footer>
     </body>
 </html>
