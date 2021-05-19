@@ -12,7 +12,7 @@
 
 <td>{{$article->Title}}</td>
 <td>{{$article->Content}}</td>
-<td>{{$article->created_at}}</td>
+<td>{{$article->created_at->format('Y-m-d')}}</td>
 <td>{{$article->Topic}}</td>
 
 </tbody>
