@@ -1,4 +1,10 @@
 <div class="container">
+    @if(Session::has('message_sent'))
+        <div class="alert alert-success" role="alert">
+            {{Session::get('message_sent')}}
+
+        </div>
+        @endif
     <form method="post" action="{{route('feedback')}}">
 
         @csrf

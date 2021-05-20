@@ -18,6 +18,6 @@ class FeedbackController extends Controller
         'FeedbackContent'=> $request->FeedbackContent];
 
 
-        Mail::to('clickerbot.info@gmail.com')->send(new FeedbackMail($feedback));
+        Mail::to('ipprojecttestmail@gmail.com')->send(new FeedbackMail($feedback));
 return back()->with('message_sent','Your message has been sent');
 }}
