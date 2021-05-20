@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/register.blade.php', function ()
+Route::get('/register', function ()
 {
     return view('register');
 });

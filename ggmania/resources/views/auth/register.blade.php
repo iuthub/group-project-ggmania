@@ -1,59 +1,67 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration form - Pure Codding</title>
+    <link rel="stylesheet" href="{{ asset('/css/welcome.css') }}"/>
+</head>
+<body>
+<div class="textbox">
+    <img src="{{ asset('/ggmania.png') }}" alt="Logo" height="200" width="200">
+    <h1>
+        GGmania
+    </h1>
+    <h2>
+        GGmania adds all gamers together.
+    </h2>
+    <p>Here are collected different players
+        who write an article about their favorite games and their features.
+        <br> Join us! And you will find many useful things!
+    </p>
+</div>
 
-        <!-- Validation Errors -->
+    <div class="Registration">
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
-
-        <form method="POST" action="{{ route('register') }}">
+        <form method="post" action="{{route('register')}}">
             @csrf
-
-            <!-- Name -->
-            <div>
-                <x-label for="name" :value="__('Name')" />
-
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+            <p class="login-text" style="font-size:2em;font-weight: 800;">Registration</p>
+            <div class="input-group">
+                <input name="name" type="text" placeholder="First Name" required>
             </div>
-
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
-
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+            <div class="input-group">
+                <input name="last_name" type="text" placeholder="Last Name" required>
             </div>
-
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
+            <div class="input-group">
+                <input type="text" placeholder="Username" name="username" required>
             </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
+            <div class="input-group">
+                <input type="email" placeholder="E-mail" name="email" required>
             </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
-                </x-button>
+            <div class="input-group">
+                <input type="password" placeholder="Password" name="password" required>
             </div>
+            <div class="input-group">
+                <input type="password" placeholder="Confirm Password" name="password_confirmation" required>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Phone number" name="phone_number" required>
+            </div>
+            <div class="input-group">
+                <input type="date" placeholder="Date of Birth" name="birth_date" required>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Postal code" name="postal_code" required>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="City" name="city" required>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Passport Number" name="passport_number" required>
+            </div>
+            <button type="submit" class="register">Create account</button>
         </form>
-    </x-auth-card>
-</x-guest-layout>
+
+    </div>
+</body>
+</html>
