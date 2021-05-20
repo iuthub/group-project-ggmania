@@ -34,7 +34,7 @@
         </div>
         <div class="login-regiter-text">
 
-            <button class="register"><a href="register.blade.php">Create account</a></button>
+            <button class="register"><a href="/register">Create account</a></button>
 
         </div>
 
