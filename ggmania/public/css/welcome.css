@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #1a202c;
+    background-color: #fdfdfe;
 
 }
 .textbox
@@ -11,16 +11,16 @@
 }
 h1 {
     font-size: 55px;
-    color: #01fda0;
+    color: #2d3748;
     font-family: Roboto, serif;
 }
 h2{
     font-size: 30px;
-    color: #a0aec0;
+    color: #000001;
 }
 p{
     font-size: 15px;
-    color: #ffffff;
+    color: #0a0a0a;
 
 }
 .container
@@ -31,19 +31,19 @@ p{
     margin-right: 160px;
     float: right;
     border-radius: 12px;
-    background-color: #4a5568;
+    background-color: #96c9d4;
     text-align: center;
 }
 .form
 {
     margin-top: 10px;
-    background-color: #4a5568;
+    background-color: #96c9d4;
     padding: 20px;
 }
 .form p
 {
     margin: -10px;
-    background-color: #4a5568;
+    background-color: #95c8d3;
 }
 .form input
 {
@@ -58,7 +58,7 @@ p{
 .login
 {
     margin-top: 15px;
-    background-color:#2d3748;
+    background-color: #2d3748;
     padding: 16px;
     width: 100%;
     border-radius:8px;
@@ -93,7 +93,7 @@ p{
 .login-regiter-text
 {
     margin-top: -30px;
-    background-color: #4a5568;
+    background-color: #95c8d3;
     padding: 20px;
 }
 .Registration{
@@ -103,19 +103,19 @@ p{
     margin-right: 160px;
     float: right;
     border-radius: 12px;
-    background-color: #4a5568;
+    background-color: #96c9d4;
     text-align: center;
 }
 form
 {
     margin-top: 10px;
-    background-color: #4a5568;
+    background-color: #96c9d4;
     padding: 20px;
 }
 form p
 {
     margin: -10px 10px 10px;
-    background-color: #4a5568;
+    background-color: #96c9d4;
 }
 form input
 {
