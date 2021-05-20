@@ -1,70 +1,77 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #1a202c;
-
+    background-color: #fdfdfe;
 }
 .textbox
 {
-    margin-top: 200px;
+    margin-top: 125px;
     margin-left: 150px;
 }
 h1 {
     font-size: 55px;
-    color: #01fda0;
+    color: #4b0081;
     font-family: Roboto, serif;
 }
 h2{
     font-size: 30px;
-    color: #a0aec0;
+    color: #000001;
 }
 p{
     font-size: 15px;
-    color: #ffffff;
-
+    color: #0a0a0a;
 }
 .container
 {
     width: 400px;
     height: 400px;
-    margin-top: -194px;
-    margin-right: 160px;
+    margin-top: -320px;
+    margin-right: 150px;
     float: right;
     border-radius: 12px;
-    background-color: #4a5568;
+    background-color: #96c9d4;
     text-align: center;
 }
 .form
 {
     margin-top: 10px;
-    background-color: #4a5568;
+    background-color: #96c9d4;
     padding: 20px;
 }
 .form p
 {
     margin: -10px;
-    background-color: #4a5568;
+    background-color: #95c8d3;
 }
 .form input
 {
-    color: white;
+    color: #0a0a0a;
     margin-top: 20px;
     border-radius: 8px;
     padding: 17px;
     width: 332px;
     margin-left: -10px;
     margin-right: -10px;
+    border-color: #04AA6D;
 }
-.login
+.form input:hover
+{
+    border: 3px solid #7efdd3;
+}
+button
 {
     margin-top: 15px;
-    background-color:#2d3748;
+    background-color: #2d3748;
     padding: 16px;
-    width: 100%;
+    width: 330px;
     border-radius:8px;
     color: white;
     font-family: Arial, serif;
     font-size: 18px;
+}
+button:hover
+{
+    border: 3px solid #7efdd3;
 }
 .login-regiter-text button
 {
@@ -77,6 +84,10 @@ p{
     font-family: Arial, serif;
     font-size: 18px;
     text-decoration: none;
+}
+.login-regiter-text button:hover
+{
+    border: 3px solid #7efdd3;
 }
 .login-regiter-text a
 {
@@ -93,33 +104,33 @@ p{
 .login-regiter-text
 {
     margin-top: -30px;
-    background-color: #4a5568;
+    background-color: #95c8d3;
     padding: 20px;
 }
 .Registration{
     width: 400px;
     height: 700px;
-    margin-top: -328px;
+    margin-top: -450px;
     margin-right: 160px;
     float: right;
     border-radius: 12px;
-    background-color: #4a5568;
+    background-color: #96c9d4;
     text-align: center;
 }
 form
 {
     margin-top: 10px;
-    background-color: #4a5568;
+    background-color: #96c9d4;
     padding: 20px;
 }
 form p
 {
     margin: -10px 10px 10px;
-    background-color: #4a5568;
+    background-color: #96c9d4;
 }
 form input
 {
-    color: white;
+    color: #000000;
     margin-top: 2px;
     border-radius: 8px;
     padding: 10px;
@@ -139,7 +150,10 @@ form input
     color: white;
     font-family: Arial, serif;
     font-size: 18px;
-
+}
+.Registration button:hover
+{
+    border: 3px solid #7efdd3;
 }
 .Registration .register a
 {

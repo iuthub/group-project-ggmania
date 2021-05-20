@@ -42,6 +42,9 @@ Route::get('/feedback', function () {
 });
 
 Route::post('/feedback', 'FeedbackController@Feedback')->name('feedback');
+Route::get('/pattern', function () {
+    return view('pattern');
+});
 
 
 Route::get('/dashboard', function () {

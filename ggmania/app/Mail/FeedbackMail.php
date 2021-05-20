@@ -29,6 +29,6 @@ public $feedback;
      */
     public function build()
     {
-        return $this->subject('Mailing Laravel')->view('Feedback');
+        return $this->subject('Mailing Laravel')->view('email.Feedback');
     }
 }

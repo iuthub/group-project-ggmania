@@ -9,7 +9,8 @@
     <body>
     <div class="textbox">
 
-            <h1>
+        <img src="{{ asset('/ggmania.png') }}" alt="Logo" height="200" width="200">
+        <h1>
                  GGmania
             </h1>
             <h2>
@@ -39,5 +40,6 @@
         </div>
 
     </div>
+
     </body>
 </html>
