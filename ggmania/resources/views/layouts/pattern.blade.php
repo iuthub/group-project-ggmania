@@ -26,13 +26,19 @@
 </main>
 
 <footer>
+    <div class="footer-content">
+        <img src="{{ asset('/ggmaniamain.jpg') }}" alt="Logo" height="50" width="250">
+        <p>This is a blog for people interested in games and their creation.
+            Inside you can find much interesting content and even create your own article.
+        </p>
+    </div>
     @if(Session::has('message_sent')) //с этой строки начинается feedback
         <div class="alert alert-success" role="alert">
             {{Session::get('message_sent')}}
 
         </div>
     @endif
-    <form method="post" action="{{route('feedback')}}">
+    <form method="post" action="{{route('feedback')}}" class="feedback">
 
         @csrf
         <label for="fname">First Name</label>
@@ -49,11 +55,9 @@
 
         <textarea name="FeedbackContent" placeholder="Write something.."></textarea>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" class="submit">
 
-    </form> //до этой строки
-    <h2>&copy; Team-GGmania</h2>
-    <p> interesting</p>
+    </form>
 </footer>
 </body>
 </html>
