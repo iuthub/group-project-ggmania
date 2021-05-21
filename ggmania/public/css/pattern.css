@@ -15,11 +15,12 @@ header
 {
     height: 10vh;
 }
-header h2
+header img
 {
     position: absolute;
-    margin-top: 20px;
-    left:20%;
+    margin-top: 10px;
+    left: 5%;
+    width: 250px;
 }
 footer
 {
@@ -38,11 +39,12 @@ footer h2
 }
 .navigation a{
     position: relative;
-    left: 45%;
+    left: 72%;
     top: 20px;
     color: white;
     text-decoration: none;
     margin-right: 20px;
+    font-size: 20px;
 }
 footer p
 {

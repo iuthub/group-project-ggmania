@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-    <h2>Logo</h2>
+    <img src="{{ asset('/ggmaniamain.jpg') }}" alt="Logo">
     <div class="navigation">
         <a href="">Home</a>
         <a href="">Categories</a>
