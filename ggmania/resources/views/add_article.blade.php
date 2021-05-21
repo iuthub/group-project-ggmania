@@ -7,7 +7,8 @@
 @if(session()->has('success'))
     {{session()->get('success')}}
 @endif
-
+@section('content')
+    @parent
 <form method="post" action="{{route('addarticle')}}">
     @csrf
 
@@ -22,4 +23,4 @@
     </textarea><br/>
     <button type="submit">Add article</button>
 </form>
-
+@endsection

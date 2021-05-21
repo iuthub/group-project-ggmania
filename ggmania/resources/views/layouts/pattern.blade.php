@@ -18,7 +18,10 @@
         <a href="">Log in</a>
     </div>
 </header>
- @yield('content')
+<main>
+    @yield('content')
+</main>
+
 <footer>
     <h2>&copy; Team-GGmania</h2>
     <p> interesting</p>
