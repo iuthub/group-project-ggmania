@@ -74,7 +74,7 @@ button
 }
 button:hover
 {
-    border: 4px solid #03ec3d;
+    border: 4px solid #ec0303;
 }
 .login-regiter-text button , a
 {
@@ -90,7 +90,7 @@ button:hover
 }
 .login-regiter-text button:hover
 {
-    border: 4px solid #ff0000;
+    border: 4px solid #ffffff;
 }
 
 footer

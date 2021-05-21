@@ -23,7 +23,7 @@
 </header>
  @yield('content')
 <footer>
-    @if(Session::has('message_sent'))
+    @if(Session::has('message_sent')) //с этой строки начинается feedback
         <div class="alert alert-success" role="alert">
             {{Session::get('message_sent')}}
 
@@ -48,7 +48,7 @@
 
         <input type="submit" value="Submit">
 
-    </form>
+    </form> //до этой строки
     <h2>&copy; Team-GGmania</h2>
     <p> interesting</p>
 </footer>
