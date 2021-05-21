@@ -24,6 +24,14 @@ Route::get('/about', function () {
     return view('about');
 })->middleware(['auth']);
 
+Route::get('/profile', function () {
+    return view('profile');
+})->middleware(['auth']);
+
+Route::get('page', function () {
+    echo 'hi';
+});
+
 Route::get('/add_article', function () {
     return view('add_article');
 })->middleware(['auth']);
@@ -50,6 +58,8 @@ Route::get('/pattern', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+
 
 require __DIR__.'/auth.php';
 
