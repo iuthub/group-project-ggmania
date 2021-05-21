@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('/css/pattern.css') }}"/>
 </head>
 <body>
+@yield('text')
 <header>
     <img src="{{ asset('/ggmaniamain.jpg') }}" alt="Logo">
     <div class="navigation">
@@ -24,3 +25,4 @@
 </footer>
 </body>
 </html>
+

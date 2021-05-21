@@ -30,6 +30,9 @@ Route::get('/add_article', function () {
 
 Route::post('/add_article', 'ArticleController@addArticle')->name('addarticle');
 
+
+Route::get('/feed/{article}', 'ArticleController@show')->name('showarticle');
+
 Route::get('/feed', 'ArticleController@showArticle');
 
 
@@ -49,3 +52,5 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+

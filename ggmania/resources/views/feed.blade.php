@@ -1,4 +1,4 @@
-@extends('pattern')
+@extends('layouts.pattern')
 @section('content')
 
 @foreach($all_articles as $article)
