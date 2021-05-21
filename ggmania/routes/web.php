@@ -39,12 +39,12 @@ Route::get('/feed', 'ArticleController@showArticle');
 
 Route::get('/feedback', function () {
     return view('/feedback');
-});
+})->middleware([]);
 
 Route::post('/feedback', 'FeedbackController@Feedback')->name('feedback');
 Route::get('/pattern', function () {
     return view('pattern');
-});
+})->middleware(['auth']);
 
 
 Route::get('/dashboard', function () {
