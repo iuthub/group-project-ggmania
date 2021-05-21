@@ -22,19 +22,23 @@
             </p>
         </div>
     <div class="container">
-        <div class="form">
+        <form method="post" action="{{route('login')}}" class="form">
+            @csrf
+
             <p class="login-text" style="font-size:2em;font-weight: 800;">Log in</p>
             <label>
-                <input type="text" class="text" placeholder="Enter your Email or Username" required>
+                <input name="email" type="text" class="text" placeholder="Enter your Email or Username" required>
             </label>
             <label>
-                <input type="password" class="text" placeholder="Password" required>
+                <input name="password" type="password" class="text" placeholder="Password" required>
             </label>
             <button class="login">Log in</button>
 
-        </div>
+        </form>
         <div class="login-regiter-text">
-            <button class="register"><a href="register.blade.php">Create account</a></button>
+
+            <button class="register"><a href="/register">Create account</a></button>
+
         </div>
 
     </div>

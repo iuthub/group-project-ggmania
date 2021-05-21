@@ -22,13 +22,15 @@
 </div>
 
     <div class="Registration">
-        <form>
+        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+        <form method="post" action="{{route('register')}}">
+            @csrf
             <p class="login-text" style="font-size:2em;font-weight: 800;">Registration</p>
             <div class="input-group">
-                <input type="text" placeholder="First Name" required>
+                <input name="name" type="text" placeholder="First Name" required>
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Last Name" required>
+                <input name="last_name" type="text" placeholder="Last Name" required>
             </div>
             <div class="input-group">
                 <input type="text" placeholder="Username" name="username" required>
@@ -40,25 +42,26 @@
                 <input type="password" placeholder="Password" name="password" required>
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Confirm Password" name="cpassword" required>
+                <input type="password" placeholder="Confirm Password" name="password_confirmation" required>
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Phone number" required>
+                <input type="text" placeholder="Phone number" name="phone_number" required>
             </div>
             <div class="input-group">
-                <input type="date" placeholder="Date of Birth" required>
+                <input type="date" placeholder="Date of Birth" name="birth_date" required>
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Postal code" required>
+                <input type="text" placeholder="Postal code" name="postal_code" required>
             </div>
             <div class="input-group">
-                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="City" name="city" required>
             </div>
             <div class="input-group">
-                <input type="text" placeholder="Passport Number" required>
+                <input type="text" placeholder="Passport Number" name="passport_number" required>
             </div>
+            <button type="submit" class="register">Create account</button>
         </form>
-        <button class="register"><a href="welcome.blade.php">Create account</a></button>
+
     </div>
 </body>
 </html>
