@@ -11,6 +11,7 @@ body
 {
     margin-top: 180px;
     margin-left: 150px;
+    float: left;
 }
 h2{
     font-size: 25px;
@@ -24,7 +25,7 @@ p{
 {
     width: 400px;
     height: 400px;
-    margin-top: -260px;
+    margin-top: 55px;
     margin-right: 150px;
     float: right;
     border-radius: 12px;
@@ -106,64 +107,6 @@ button:hover
     margin-top: -30px;
     background-color: #ffffff;
     padding: 20px;
-}
-.Registration{
-    width: 400px;
-    height: 700px;
-    margin-top: -450px;
-    margin-right: 160px;
-    float: right;
-    border-radius: 12px;
-    background-color: #96c9d4;
-    text-align: center;
-}
-form
-{
-    margin-top: 10px;
-    background-color: #96c9d4;
-    padding: 20px;
-}
-form p
-{
-    margin: -10px 10px 10px;
-    background-color: #96c9d4;
-}
-form input
-{
-    color: #000000;
-    margin-top: 2px;
-    border-radius: 8px;
-    padding: 10px;
-    width: 335px;
-    height: 20px;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-.Registration button
-{
-    margin-top: 15px;
-    background-color:#04AA6D;
-    padding: 16px;
-    width: 330px;
-    border-radius:8px;
-    color: white;
-    font-size: 18px;
-}
-.Registration button:hover
-{
-    border: 3px solid #7efdd3;
-}
-.Registration .register a
-{
-    margin-top: 15px;
-    background-color:#04AA6D;
-    padding: 16px;
-    width: 330px;
-    border-radius:8px;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
 }
 footer
 {

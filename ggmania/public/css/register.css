@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:#f5f5f5;
+    padding: 10px;
+
+}
+.Registration{
+ max-width: 700px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 25px 30px;
+    border-radius: 12px;
+}
+.login-text
+{
+    margin-left: 180px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 800;
+}
+.Registration form
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+form .input-group
+{
+    margin: 15px 0px 10px 0px;
+    width: calc(100% /2 - 20px);
+    font-weight: 500;
+    font-size: 20px;
+}
+input
+{
+    height: 45px;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size:16px;
+}
+input:hover
+{
+    border: 3px solid #bab8b8;
+}
+.button-register
+{
+    height: 45px;
+    width: 500px;
+    margin: 25px 0px 0px 70px;
+}
+.button-register button
+{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #ffffff;
+    background-color: #d91317;
+    font-size: 20px;
+    font-family: Roboto;
+
+}
+
+
