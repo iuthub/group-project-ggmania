@@ -11,6 +11,9 @@ body{
     align-items: center;
     background:#f5f5f5;
     padding: 10px;
+}
+.logo img
+{
 
 }
 .Registration{
@@ -71,7 +74,6 @@ input:hover
     background-color: #d91317;
     font-size: 20px;
     font-family: Roboto;
-
 }
 
 
