@@ -1,3 +1,6 @@
+@extends('pattern')
+@section('content')
+
 @foreach($all_articles as $article)
     <table>
 <thead>
@@ -18,4 +21,4 @@
 </tbody>
     </table>
 @endforeach
-
+@endsection

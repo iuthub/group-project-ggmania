@@ -38,7 +38,7 @@ class RegisteredUserController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'last_name' => 'string',
             "username" => 'required|string|unique:users',
-            'phone_number' => 'integer|unique:users',
+            'phone_number' => 'string|unique:users',
             'birth_date' => 'date',
             'postal_code' => 'integer',
             'city' => 'string',

@@ -107,6 +107,7 @@
       <path value="$PROJECT_DIR$/ggmania/vendor/tijsverkoyen/css-to-inline-styles" />
       <path value="$PROJECT_DIR$/ggmania/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/ggmania/vendor/composer" />
+      <path value="$PROJECT_DIR$/ggmania/vendor/laravel/breeze" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />

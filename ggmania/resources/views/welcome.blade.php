@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">    <div class="textbox">
 
-        <img src="{{ asset('/ggmania.png') }}" alt="Logo" height="200" width="200">
+        <img src="{{ asset('/gglong.jpg') }}" alt="Logo" height="100" width="400">
         <h2>
             GGmania&mdash;community of gamers and source of sharp opinions!
         </h2>
@@ -36,6 +36,9 @@
         </div>
 
     </div>
-
+    <footer>
+        <h2>&copy; Team-GGmania</h2>
+        <p> interesting</p>
+    </footer>
     </body>
 </html>
