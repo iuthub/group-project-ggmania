@@ -14,12 +14,25 @@ class ArticleController extends Controller
     $article->Title=$request->Title;
     $article->Topic=$request->Topic;
     $article->save();
+
+    return redirect()->back()->with('success','Article has been added successfully');
     }
+
     public function showArticle()
     {
         $all_articles= Article::orderBy('id', 'DESC')->get();
 
         return view('feed', compact('all_articles'));
+
+    }
+
+    public function show(Article $article)
+    {
+
+return view('articles.show', ['article'=> $article]);
+
+
+
 
     }
 }
