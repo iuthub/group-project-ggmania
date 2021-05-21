@@ -1,4 +1,4 @@
-*{
+*{  font-family: 'Manrope', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fdfdfe;
@@ -11,7 +11,6 @@
 h1 {
     font-size: 55px;
     color: #4b0081;
-    font-family: Roboto, serif;
 }
 h2{
     font-size: 30px;
@@ -66,7 +65,6 @@ button
     width: 330px;
     border-radius:8px;
     color: white;
-    font-family: Arial, serif;
     font-size: 18px;
 }
 button:hover
@@ -81,7 +79,6 @@ button:hover
     width: 330px;
     border-radius:8px;
     color: white;
-    font-family: Arial, serif;
     font-size: 18px;
     text-decoration: none;
 }
@@ -97,7 +94,6 @@ button:hover
     width: 330px;
     border-radius:8px;
     color: white;
-    font-family: Arial, serif;
     font-size: 18px;
     text-decoration: none;
 }
@@ -148,7 +144,6 @@ form input
     width: 330px;
     border-radius:8px;
     color: white;
-    font-family: Arial, serif;
     font-size: 18px;
 }
 .Registration button:hover
@@ -163,7 +158,6 @@ form input
     width: 330px;
     border-radius:8px;
     color: white;
-    font-family: Arial, serif;
     font-size: 18px;
     text-decoration: none;
 }

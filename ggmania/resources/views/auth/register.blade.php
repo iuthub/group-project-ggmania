@@ -7,18 +7,14 @@
     <link rel="stylesheet" href="{{ asset('/css/welcome.css') }}"/>
 </head>
 <body>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">    <div class="textbox">
 <div class="textbox">
-    <img src="{{ asset('/ggmania.png') }}" alt="Logo" height="200" width="200">
-    <h1>
-        GGmania
-    </h1>
-    <h2>
-        GGmania adds all gamers together.
-    </h2>
-    <p>Here are collected different players
-        who write an article about their favorite games and their features.
-        <br> Join us! And you will find many useful things!
-    </p>
+    <img src="{{ asset('/compact.png') }}" alt="Logo" height="200" width="200">
+
+
+
+
 </div>
 
     <div class="Registration">
@@ -63,5 +59,6 @@
         </form>
 
     </div>
+</div>
 </body>
 </html>

@@ -17,10 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/register', function ()
-{
-    return view('register');
-});
+
 //About our project
 
 Route::get('/about', function () {
