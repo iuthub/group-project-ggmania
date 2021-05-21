@@ -12,13 +12,13 @@
     <div class="textbox">
         <img src="{{ asset('/gglong.jpg') }}" alt="Logo" height="100" width="400">
         <h2>
-            GGmania&mdash;community of gamers and source of sharp opinions!
+            GGmania &mdash; community of gamers and source of sharp opinions
         </h2>
         </div>
     <div class="container">
         <form method="post" action="{{route('login')}}" class="form">
             @csrf
-            <div class="login-text"> <p style="font-size:40px;font-weight: 800;font-family: Roboto;">Log in</p></div>
+            <div class="login-text"> <p style="font-size:40px;font-weight: 800;">Log in</p></div>
             <div class="input">
                 <label><input name="email" type="text" class="text" placeholder="Enter your Email or Username" required></label>
                 <label><input name="password" type="password" class="text" placeholder="Password" required></label>
