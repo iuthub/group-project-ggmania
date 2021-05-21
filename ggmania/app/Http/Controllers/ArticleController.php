@@ -15,7 +15,9 @@ class ArticleController extends Controller
     $article->Topic=$request->Topic;
     $article->save();
 
-    return redirect()->back()->with('success','Article has been added successfully');
+    //return redirect()->back()->with('success','Article has been added successfully');
+
+        return redirect('/feed/'.$article->id);
     }
 
     public function showArticle()
@@ -29,7 +31,7 @@ class ArticleController extends Controller
     public function show(Article $article)
     {
 
-return view('articles.show', ['article'=> $article]);
+    return view('articles.show', ['article'=> $article]);
 
 
 
