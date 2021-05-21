@@ -4,6 +4,7 @@
 @foreach($all_articles as $article)
     <table>
 <thead>
+<a href="/feed/{{$article->id}}"></a>
 <td>Title</td>
 <td>Cont</td>
 <td>Created at</td>

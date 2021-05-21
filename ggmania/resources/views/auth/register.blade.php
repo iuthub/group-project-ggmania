@@ -9,8 +9,8 @@
 <body>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">    <div class="textbox">
-<div class="logo">
-    <img src="{{ asset('/logo.svg') }}" alt="Logo" height="200" width="200">
+<div class="logo" style="text-align:center;">
+    <img src="{{ asset('/logo.svg') }}" alt="Logo" height="100" width="100">
 </div>
     <div class="Registration">
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
