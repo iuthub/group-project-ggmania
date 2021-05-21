@@ -11,10 +11,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">    <div class="textbox">
 <div class="textbox">
     <img src="{{ asset('/compact.png') }}" alt="Logo" height="200" width="200">
-
-
-
-
 </div>
 
     <div class="Registration">
