@@ -1,5 +1,5 @@
 @extends('layouts.pattern')
-
+<link rel="stylesheet" href="{{ asset('/css/addarticle.css') }}"/>
 
 
 
@@ -8,6 +8,7 @@
     {{session()->get('success')}}
 @endif
 @section('content')
+<div id="main">
     @parent
 <form method="post" action="{{route('addarticle')}}">
     @csrf
@@ -22,5 +23,5 @@
     <textarea name="Content" placeholder="Content">
     </textarea><br/>
     <button type="submit">Add article</button>
-</form>
+</form></div>
 @endsection
