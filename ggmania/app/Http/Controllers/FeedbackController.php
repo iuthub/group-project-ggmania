@@ -7,8 +7,7 @@ use App\Models\Feedback;
 use App\Mail\FeedbackMail;
 
 class FeedbackController extends Controller
-{   //protected $guarded = [];
-    //protected $fillable = ['Name','Surname','Mail','FeedbackContent'];
+{
     public function Feedback(Request $request)
     {
         $feedback=[
@@ -19,5 +18,6 @@ class FeedbackController extends Controller
 
 
         Mail::to('ipprojecttestmail@gmail.com')->send(new FeedbackMail($feedback));
-return back()->with('message_sent','Your message has been sent');
-}}
+        return redirect()->back()->with('message_sent','Your message has been sent');
+     }
+}
