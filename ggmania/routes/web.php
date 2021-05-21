@@ -22,26 +22,26 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     return view('about');
-});
+})->middleware(['auth']);
 
 Route::get('/add_article', function () {
     return view('add_article');
-});
+})->middleware(['auth']);
 
-Route::post('/add_article', 'ArticleController@addArticle')->name('addarticle');
+Route::post('/add_article', 'ArticleController@addArticle')->name('addarticle')->middleware(['auth']);
 
 
-Route::get('/feed/{article}', 'ArticleController@show')->name('showarticle');
+Route::get('/feed/{article}', 'ArticleController@show')->name('showarticle')->middleware(['auth']);
 
-Route::get('/feed', 'ArticleController@showArticle');
+Route::get('/feed', 'ArticleController@showArticle')->middleware(['auth']);
 
 
 
 Route::get('/feedback', function () {
     return view('/feedback');
-})->middleware([]);
+})->middleware(['auth']);
 
-Route::post('/feedback', 'FeedbackController@Feedback')->name('feedback');
+Route::post('/feedback', 'FeedbackController@Feedback')->name('feedback')->middleware(['auth']);
 Route::get('/pattern', function () {
     return view('pattern');
 })->middleware(['auth']);
