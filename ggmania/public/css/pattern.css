@@ -1,57 +1,35 @@
 body{
     height: 100vh;
-    width: 100%;
-    font-family: Roboto, serif;
+    font-family: Roboto;
     display: flex;
     flex-direction: column;
+
+    justify-content: space-between;
+    align-content: center;
 }
 *{
     margin: 0;
     padding:0;
 }
-.header
-{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+header, footer{
     background-color: #181818;
+    width: 100%;
     color: white;
-    font-family: Roboto, serif;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 100px;
 }
-.navigation
+header
 {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    padding: 10px 15px;
-    font-size: 20px;
-}
-.navigation ul li
-{
-    float:right;
-    list-style: none;
-}
-.navigation ul li a
-{
-
-    color: white;
-    text-decoration: none;
+    height: 10vh;
     display: block;
-    width: 200px;
-    font-size: 17px;
-    padding-top: 25px;
-    height: 55px;
 }
 header img
 {
-    float: left;
+    position: relative;
     margin-top: 10px;
     left: 5%;
     width: 250px;
 }
+
 footer
 {
     margin-top: 50px;
@@ -91,7 +69,7 @@ footer h1
     border-radius: 5px;
     border: 1px solid #ccc;
     padding-left: 15px;
-    margin: 10px 0 0 10px;
+    margin: 10px 0px 0px 10px;
 }
 .feedback textarea
 {
@@ -107,6 +85,26 @@ footer h1
     border: 1px solid #04AA6D;
     color: white;
 
+}
+.navigation
+{
+   float: right;
+    height: 100%;
+}
+.navigation a:last-child
+{
+    padding-right: 10px;
+}
+.navigation a{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    padding: 0px 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
 }
 
 
