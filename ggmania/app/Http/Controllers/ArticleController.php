@@ -35,9 +35,17 @@ class ArticleController extends Controller
 
     return view('articles.show', ['article'=> $article]);
 
+    }
 
 
 
+
+
+    public function delete($id)
+    { $data=Article::all();
+      $data=Article::find($id);
+      $data->delete();
+      return redirect()->back()->with('deleted','Your article has been deleted');
     }
 }
 

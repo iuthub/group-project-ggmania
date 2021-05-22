@@ -43,7 +43,7 @@ Route::get('/feed/{article}', 'ArticleController@show')->name('showarticle')->mi
 
 Route::get('/feed', 'ArticleController@showArticle')->middleware(['auth']);
 
-
+Route::get('/delete/{id}', 'ArticleController@delete')->middleware(['auth']);
 
 Route::get('/feedback', function () {
     return view('/feedback');
