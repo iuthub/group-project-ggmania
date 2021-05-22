@@ -18,7 +18,7 @@
 <td>{{$article->Content}}</td>
 <td>{{$article->created_at->format('Y-m-d')}}</td>
 <td>{{$article->Topic}}</td>
-<td>{{Auth::user()->name}}</td>
+<td>{{$article->username}}</td>
 
 </tbody>
     </table>

@@ -13,7 +13,9 @@ class ArticleController extends Controller
     $article->Content=$request->Content;
     $article->Title=$request->Title;
     $article->Topic=$request->Topic;
+    $article->username=auth()->user()->username;
     $article->save();
+
 
     //return redirect()->back()->with('success','Article has been added successfully');
 
