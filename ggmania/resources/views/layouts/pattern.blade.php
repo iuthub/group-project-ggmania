@@ -14,15 +14,11 @@
 @yield('text')
 <div class="container">
     <header class="header">
-
-        <div class="logo"><img src="{{ asset('/ggmaniamain.jpg') }}" alt="Logo"></div>
+    <img src="{{ asset('/ggmaniamain.jpg') }}" alt="Logo">
     <div class="navigation">
-        <ul>
-            <li><a href="/prfile">Log in</a></li>
-            <li><a href="">Add article</a></li>
-            <li><a href="">Categories</a></li>
-            <li><a href="">Home</a></li>
-        </ul>
+        <a href="">Home</a>
+        <a href="">Add article</a>
+        <a href="">Log in</a>
     </div>
     </header>
 <main>
