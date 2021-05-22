@@ -20,8 +20,12 @@
 <td>{{$article->created_at->format('Y-m-d')}}</td>
 <td>{{$article->Topic}}</td>
 <td>{{$article->username}}</td>
+{{--@if (Auth::user()->username = $article->username)              --}}
+@if (auth()->user()->username === $article->username) {
 <td><a href="{{"delete/".$article['id']}}">Delete</a><a/></td>
+}
 
+@endif
 </tbody>
     </table>
 @endforeach

@@ -31,7 +31,7 @@
             Inside you can find much interesting content<br> and even create your own article.
         </p>
     </div>
-    @if(Session::has('message_sent')) //с этой строки начинается feedback
+    @if(Session::has('message_sent'))
         <div class="alert alert-success" role="alert">
             {{Session::get('message_sent')}}
 
