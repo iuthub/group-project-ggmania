@@ -1,0 +1,38 @@
+.arttop
+{
+    padding: 50px 20px;
+    text-align: center;
+
+}
+.arttop h1
+{
+    font-family: Roboto, sans-serif;
+    color: #181818;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1;
+    padding: 10px 0;
+    margin:0;
+    text-decoration: underline;
+}
+.container{
+    width: 80%;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 50px 0px 0px 200px;
+    display: flex;
+}
+.container table
+{
+    padding: 25px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+thead , tr
+{
+    text-align: left;
+    padding: 15px;
+}
+
