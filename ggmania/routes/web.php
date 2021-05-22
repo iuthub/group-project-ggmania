@@ -58,6 +58,7 @@ Route::get('/pattern', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+Route::get('/{linkToPage}', function () => {return view('viewName')})
 
 
 
