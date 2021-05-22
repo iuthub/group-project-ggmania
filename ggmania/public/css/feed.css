@@ -17,7 +17,7 @@
 }
 .container{
     width: 80%;
-    height: 400px;
+    height:600px ;
     background-color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     margin: 50px 0px 0px 200px;
@@ -30,9 +30,24 @@
     border-spacing: 0;
     width: 100%;
 }
-thead , tr
+thead , td
 {
     text-align: left;
     padding: 15px;
-}
 
+}
+thead
+{
+    background-color: #181818;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Roboto , sans-serif;
+    border: 3px solid #bc1215;
+}
+td
+{
+    align-content: start;
+    font-size: 20px;
+
+}

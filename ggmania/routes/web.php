@@ -60,12 +60,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 
-Route::get('/{linkToPage}', function () {return view('viewName');}
-
-);
-
-
-
 require __DIR__. '/auth.php';
 
 
