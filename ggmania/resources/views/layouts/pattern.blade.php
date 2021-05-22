@@ -12,15 +12,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
 @yield('text')
-<header>
-    <img src="{{ asset('/ggmaniamain.jpg') }}" alt="Logo">
+<div class="container">
+    <header class="header">
+
+        <div class="logo"><img src="{{ asset('/ggmaniamain.jpg') }}" alt="Logo"></div>
     <div class="navigation">
-        <a href="">Home</a>
-        <a href="">Categories</a>
-        <a href="">Add article</a>
-        <a href="">Log in</a>
+        <ul>
+            <li><a href="/prfile">Log in</a></li>
+            <li><a href="">Add article</a></li>
+            <li><a href="">Categories</a></li>
+            <li><a href="">Home</a></li>
+        </ul>
     </div>
-</header>
+    </header>
 <main>
     @yield('content')
 </main>
@@ -59,6 +63,7 @@
 
     </form>
 </footer>
+</div>
 </body>
 </html>
 
