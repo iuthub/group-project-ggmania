@@ -1,93 +1,36 @@
 body{
     height: 100vh;
-    width: 100%;
-    font-family: Roboto, serif;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
 }
+
 *{
     margin: 0;
     padding:0;
 }
-.header
-{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+header, footer{
     background-color: #181818;
+    width: 100%;
     color: white;
-    font-family: Roboto, serif;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 100px;
 }
-.navigation
+header
 {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    padding: 10px 15px;
-    font-size: 20px;
-}
-.navigation ul li
-{
-    float:right;
-    list-style: none;
-}
-.navigation ul li a
-{
-
-    color: white;
-    text-decoration: none;
+    height: 10vh;
     display: block;
-    width: 200px;
-    font-size: 17px;
-    padding-top: 25px;
-    height: 55px;
 }
 header img
 {
-    float: left;
+    position: relative;
     margin-top: 10px;
     left: 5%;
     width: 250px;
 }
+
 footer
 {
-    margin-top: 50px;
-    background-color: #181818;
-    color: white;
-    height: 400px;
-    width: 100%;
-    position: relative;
-    display: flex;
-}
-footer p
-{
-    margin-top: 10px;
-    color: white;
-    font-size: 20px;
-}
-footer h1
-{
-    font-size: 25px;
-    text-align: center;
-    text-decoration: underline;
-}
-.footer-content , .feedback
-{
-    flex: 1;
-    padding: 25px;
-
-}
-.feedback input
-{
-    width: 350px;
-    font-weight: 500;
-    font-size: 20px;
-    height: 30px;
-    display: flex;
-    flex-wrap: wrap;
     border-radius: 5px;
     border: 1px solid #ccc;
     padding-left: 15px;
@@ -95,19 +38,26 @@ footer h1
 }
 .feedback textarea
 {
-    width: 500px;
-    height: 300px;
-    margin: -250px -50px -70px 400px;
-    padding-left: 10px;
-}
-.feedback .submit
-{
-    background-color: #01ca2a;
-    height: 50px;
-    border: 1px solid #04AA6D;
     color: white;
 
 }
-
-
-
+.navigation
+{
+    float: right;
+    height: 100%;
+}
+.navigation a:last-child
+{
+    padding-right: 10px;
+}
+.navigation a{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
