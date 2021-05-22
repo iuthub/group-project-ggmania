@@ -20,7 +20,7 @@ class CreateArticlesTable extends Migration
             $table->string('Title');
             //$table->date("created_at");
             $table->timestamps();
-
+            $table->string('username');
         });
     }
     /**
