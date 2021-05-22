@@ -17,7 +17,15 @@
     <div class="navigation">
         <a href="/feed">Home</a>
         <a href="/add_article">Add article</a>
-        <a href="">Log in</a>
+        <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <a :href="route('logout')"
+                   onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                    {{ __('Log Out') }}
+                </a>
+            </form>
+        </a>
     </div>
 </header>
 <main>

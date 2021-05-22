@@ -33,6 +33,7 @@ header img
 {
     float: right;
     height: 100%;
+    display: flex;
 }
 .navigation a:last-child
 {
@@ -48,6 +49,11 @@ header img
     text-decoration: none;
     margin-right: 20px;
     font-size: 20px;
+    cursor: pointer;
+}
+form a
+{
+    cursor: pointer;
 }
 footer
 {
