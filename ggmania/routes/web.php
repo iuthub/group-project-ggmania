@@ -62,6 +62,6 @@ Route::get('/{linkToPage}', function () => {return view('viewName')})
 
 
 
-require __DIR__.'/auth.php';
+require __DIR__. '/auth.php';
 
 
