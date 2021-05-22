@@ -33,7 +33,7 @@ select
     font-size: 20px;
     cursor: pointer;
 }
-textarea
+form textarea
 {
     margin-top: 10px;
     width: 810px;

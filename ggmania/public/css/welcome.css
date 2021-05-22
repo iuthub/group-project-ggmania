@@ -121,31 +121,35 @@ footer h1
     padding: 25px;
 
 }
+.feedback
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+}
 .feedback input
 {
-    width: 350px;
+    width: 250px;
     font-weight: 500;
     font-size: 20px;
     height: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding-left: 15px;
-    margin: 10px 0px 0px 10px;
+    margin: 10px;
 }
 .feedback textarea
 {
-    width: 500px;
-    height: 300px;
-    margin: -190px -50px -70px 400px;
+    width: 630px;
+    height: 100px;
     padding-left: 10px;
+    margin-right: 10px;
 }
 .feedback .submit
 {
+    margin: 30px;
     background-color: #01ca2a;
     height: 50px;
     border: 1px solid #04AA6D;
     color: white;
+    text-align: center;
 
 }
