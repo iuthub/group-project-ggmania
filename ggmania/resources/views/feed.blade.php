@@ -3,10 +3,10 @@
    <div class="arttop"><h1>Articles</h1></div>
     <link rel="stylesheet" href="{{ asset('/css/feed.css') }}"/>
 @foreach($all_articles as $article)
-    <div class="container">
+    <div class="middle">
         <table>
 <thead>
-{{--*/<a href="/feed/{{$article->id}}">--}}
+
 
 
 <td>Title</td>
@@ -33,7 +33,7 @@
 </tbody>
         </table></div>
 @endforeach
-<div class="container">
+<div>
     @if(Session::has('deleted'))
         <div class="alert alert-success" role="alert">
             {{Session::get('deleted')}}
