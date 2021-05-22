@@ -19,9 +19,8 @@
         <option value="PC gaming">PC gaming</option>
     </select>
 
-    <input type="text" name="Title" placeholder="Title"><br/>
-    <textarea name="Content" placeholder="Content">
-    </textarea><br/>
+    <input type="text" name="Title" placeholder="Title" required><br/>
+    <textarea name="Content" placeholder="Content" required></textarea><br/>
     <button type="submit">Add article</button>
 </form></div>
 @endsection
