@@ -35,12 +35,9 @@
 <div class="push"></div>
 </div>
 <div class="footer"></div>
-<footer class=" container-fluid text-white fixed-bottom">
+<footer class=" container-fluid text-white">
     <div class="'container">
     <div class="container padding">
-
-
-
 
 
         <form method="post" action="{{route('feedback')}}">
