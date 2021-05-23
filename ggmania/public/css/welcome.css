@@ -24,14 +24,14 @@ p{
 }
 .justmiddle
 {
-    max-width: 400px;
-    height: 400px;
+    max-width: 500px;
+    height: 500px;
     width: 100%;
     background-color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     padding: 25px 30px;
     border-radius: 12px;
-    margin: 145px 0px 0px 1100px;
+    margin: 145px 0 0 1100px;
 
 }
 .form
@@ -46,11 +46,11 @@ p{
 }
 .form input
 {
-    margin: 15px 0px 10px 0px;
-    width: 350px;
+    margin: 15px 0px 10px 35px;
+    width: 370px;
     font-weight: 500;
     font-size: 20px;
-    height: 55px;
+    height: 50px;
     display: block;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -63,7 +63,7 @@ p{
 }
 button
 {
-    margin-top: 15px;
+    margin-top: 10px;
     background-color:#ffffff;
     border-color: #b9b7b7;
     padding: 16px;

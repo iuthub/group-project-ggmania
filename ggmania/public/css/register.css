@@ -43,7 +43,7 @@ form .input-group
 }
 input
 {
-    height: 50%;
+    height: 50px;
     width: 100%;
     display: block;
     border-radius: 5px;
@@ -57,18 +57,19 @@ input:hover
 }
 .button-register
 {
-    height: 50%;
+    height: 50px;
     width: 500px;
-    margin: 25px 0px 0px 70px;
+    margin: 25px 0 0 70px;
 }
 .button-register button
 {
-    height: 50%;
+    height: 50px;
     width: 100%;
     outline: none;
     color: #ffffff;
     background-color: #d91317;
     font-size: 20px;
+    cursor: pointer;
 }
 
 

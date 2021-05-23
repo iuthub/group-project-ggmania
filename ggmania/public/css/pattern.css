@@ -3,13 +3,15 @@ body{
     font-family: Manrope;
     display: flex;
     flex-direction: column;
+
     justify-content: space-between;
     align-content: center;
 }
 *{
-
+    margin: 0;
+    padding:0;
 }
-header{
+header, footer{
     background-color: #181818;
     width: 100%;
     color: white;
@@ -49,13 +51,19 @@ header img
     font-size: 20px;
     cursor: pointer;
 }
-form a
-{
-    cursor: pointer;
-}
 
 footer
 {
+    align-items: center;
+    background-color: #181818;
+    color: white;
+    height: 100px;
+    width: 100%;
+    position: relative;
 
-    background-color: #0a0a0a;
 }
+
+
+
+
+
