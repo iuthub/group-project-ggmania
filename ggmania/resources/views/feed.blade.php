@@ -5,14 +5,14 @@
     @foreach($all_articles as $article)
 
         <div class="middle">
-            <div class="col-md-3">
+
                 <img src="articleimg.jpg" class="img-fluid" alt="article img">
 
-            </div>
+
             <div class="col-lg-8 col-md-12 col-sm-12">
                 <h1>{{$article->Title}}</h1>
 
-                @if (strlen ($article->Content)>100){{substr($article->Content, 0, 100)}}...
+                @if (strlen ($article->Content)>1500){{substr($article->Content, 0, 1500)}}...
                 @else
                     {{$article->Content}}
                 @endif
