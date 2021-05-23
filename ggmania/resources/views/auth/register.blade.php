@@ -36,7 +36,7 @@
                 <input type="password" placeholder="Confirm Password" name="password_confirmation" required>
             </div>
             <div class="input-group">Phone number:
-                <input type="text" placeholder="Phone number" name="phone_number" required>
+                <input type="text" placeholder="Phone number" name="phone_number"  minlength="9" maxlength="9" required>
             </div>
             <div class="input-group">Date of birth:
                 <input type="date" placeholder="Date of Birth" name="birth_date" required>

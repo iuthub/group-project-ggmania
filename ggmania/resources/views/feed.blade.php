@@ -34,5 +34,6 @@
                 {{Session::get('deleted')}}
 
             </div>
+
     @endif
 @endsection
