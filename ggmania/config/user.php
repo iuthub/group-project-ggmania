@@ -1,2 +1,2 @@
 <?php
-return ['admin_emails' => env('ADMIN_EMAIL')];
+return ['admin_email' => env('ADMIN_EMAIL')];

@@ -73,13 +73,8 @@
             </div>
 
         </form>
-        @if(Session::has('deleted'))
-            <div class="alert alert-success" role="alert">
-                {{Session::get('deleted')}}
 
-            </div>
 
-    @endif
 </footer>
 </div>
 

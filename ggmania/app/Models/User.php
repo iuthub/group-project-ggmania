@@ -52,8 +52,10 @@ class User extends Authenticatable
      */
 
     function isAdmin() {
-        $admin_email = config('settings.admin_email');
-        if($this->email == $admin_email) return true;
+        $admin_emails = config('settings.admin_emails');
+        if(in_array($this->email, $admin_emails))
+
+        return true;
         else return false;
     }
 }

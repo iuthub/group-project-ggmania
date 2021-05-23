@@ -47,9 +47,10 @@ Route::get('/delete/{id}', 'ArticleController@delete')->middleware(['auth']);
 
 Route::get('/feedback', function () {
     return view('/feedback');
-})->middleware(['guest']);
+});
 
-Route::post('/feedback', 'FeedbackController@Feedback')->name('feedback')->middleware(['guest']);
+Route::post('/feedback', 'FeedbackController@Feedback')->name('feedback');
+
 Route::get('/pattern', function () {
     return view('pattern');
 })->middleware(['auth']);
@@ -58,6 +59,9 @@ Route::get('/pattern', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('/test', 'ArticleController@test');
+
 
 
 require __DIR__. '/auth.php';

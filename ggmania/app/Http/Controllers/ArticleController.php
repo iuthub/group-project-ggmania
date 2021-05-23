@@ -44,13 +44,15 @@ class ArticleController extends Controller
 
     public function delete($id)
     {
-        if (Auth::check() && Auth::user()->isAdmin()) {
-            $data = Article::all();
-            $data = Article::find($id);
-            $data->delete();
-            return redirect()->back()->with('deleted', 'Your article has been deleted');
-        }    else {
-            return redirect()->back()->with('detail', 'You are not Admin');
+        $data = Article::all();
+        $data = Article::find($id);
+        $data->delete();
+        return redirect()->back()->with('deleted', 'Your article has been deleted');
+    }
+    public function test(){
+
+        If(Auth::user()->isAdmin()) {
+            dd("you are admin") ;
         }
     }
 }
