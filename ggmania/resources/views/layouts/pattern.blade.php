@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ggmania</title>
@@ -14,7 +13,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
 @yield('text')
 <header>
-    <div class="'container">
     <img src="{{ asset('/ggmaniamain.jpg') }}" alt="Logo">
     <div class="navigation">
         <a href="/feed">Home</a>
@@ -27,11 +25,9 @@
                     {{ __('Log Out') }}
                 </a>
             </form>
-        </a>
-    </div></div>
+    </div>
 
 </header>
-
 <main>
     @yield('content')
 </main>
@@ -74,8 +70,6 @@
 
         </form>
 </footer>
-</div>
-
 </body>
 </html>
 
