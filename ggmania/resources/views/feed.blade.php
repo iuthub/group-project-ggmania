@@ -10,7 +10,7 @@
 
 
             <div class="col-lg-8 col-md-12 col-sm-12">
-                <h1>{{$article->Title}}</h1>
+                <a href="{{"feed/".$article['id']}}"><h1>{{$article->Title}}</h1></a>
 
                 @if (strlen ($article->Content)>1500){{substr($article->Content, 0, 1500)}}...
                 @else
