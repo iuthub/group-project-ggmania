@@ -16,7 +16,6 @@
     text-decoration: underline;
 }
 .container{
-
     width: 80%;
     height: 400px;
     background-color: #ffffff;
@@ -24,23 +23,16 @@
     margin: 50px 0px 0px 200px;
     display: flex;
 }
-table
+.container table
 {
-    -moz-transform: rotate(90deg);
     padding: 25px;
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
 }
-thead { background-color: #181818;
-    color: #ffffff;
-    font-family: 'Manrope', sans-serif;
-    font-size: 20px;
-    text-justify: distribute;
-    border:2px solid #a39e9e;
+thead , tr
+{
+    text-align: left;
+    padding: 15px;
 }
-
-tbody td {margin:15px;  border:2px solid #a39e9e;}
-
-
 

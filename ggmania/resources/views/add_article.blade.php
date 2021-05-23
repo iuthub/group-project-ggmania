@@ -7,9 +7,12 @@
 @if(session()->has('success'))
     {{session()->get('success')}}
 @endif
+
 @section('content')
+
 <div id="main">
     @parent
+
 <form method="post" action="{{route('addarticle')}}">
     @csrf
 
@@ -19,8 +22,9 @@
         <option value="PC gaming">PC gaming</option>
     </select>
 
-    <input type="text" name="Title" placeholder="Title" required><br/>
-    <textarea name="Content" placeholder="Content" required></textarea><br/>
+    <input class="title" type="text" name="Title" placeholder="Title" required><br/>
+    <textarea class='content' name="Content" placeholder="Content" required></textarea><br/>
     <button type="submit">Add article</button>
 </form></div>
+
 @endsection
