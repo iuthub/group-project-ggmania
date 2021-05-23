@@ -27,7 +27,6 @@ class User extends Authenticatable
         'passport_number',
         'email',
         'password',
-        'status'
     ];
 
     /**

@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\AdminUserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,21 +38,18 @@ Route::get('/add_article', function () {
 
 Route::post('/add_article', 'ArticleController@addArticle')->name('addarticle')->middleware(['auth']);
 
+
 Route::get('/feed/{article}', 'ArticleController@show')->name('showarticle')->middleware(['auth']);
 
 Route::get('/feed', 'ArticleController@showArticle')->middleware(['auth']);
 
 Route::get('/delete/{id}', 'ArticleController@delete')->middleware(['auth']);
 
-Route::get('/user/create_admin/{id}', [AdminUserController::class, 'create'])->middleware(['auth']);
-
-Route::get('/user/delete_admin/{id}', [AdminUserController::class, 'delete'])->middleware(['auth']);
-
 Route::get('/feedback', function () {
     return view('/feedback');
-})->middleware(['auth']);
+})->middleware(['guest']);
 
-Route::post('/feedback', 'FeedbackController@Feedback')->name('feedback')->middleware(['auth']);
+Route::post('/feedback', 'FeedbackController@Feedback')->name('feedback')->middleware(['guest']);
 Route::get('/pattern', function () {
     return view('pattern');
 })->middleware(['auth']);
@@ -62,8 +58,6 @@ Route::get('/pattern', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
-
-
 
 
 require __DIR__. '/auth.php';

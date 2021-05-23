@@ -51,8 +51,8 @@
 
 
     <footer class=" container-fluid text-white fixed-bottom">
-
-        <div class="container padding">
+        <div class="'container">
+            <div class="container padding">
 
 
 
@@ -77,20 +77,12 @@
                             <label for="email">Email</label>
                             <input type="text" name="Mail" placeholder="Your email" required>
                         </div>
-                        <div class="col-md-2 mx-auto mb-4">
+                        <div class="col-md-2 mt-auto mx-auto mb-4">
                             <label for="Write"></label>
                             <textarea name="FeedbackContent" placeholder="Write something.." required></textarea></div>
                         <div class="col-md-1 mx-auto mt-auto mb-4"><input class="btn btn-danger" type="submit" value="Submit"></div>
                     </div>
 
                 </form>
-                </form>
-
-        </div>
-
     </footer>
-    </body>
-
-</html>
-
-
+    </div>

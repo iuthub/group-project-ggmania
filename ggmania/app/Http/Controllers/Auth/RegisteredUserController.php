@@ -55,7 +55,7 @@ class RegisteredUserController extends Controller
             'birth_date' => $request->birth_date,
             'postal_code' => $request->postal_code,
             'city' => $request->city,
-            'passport_number' => $request->city,
+            'passport_number' => $request->passport_number,
             'password' => Hash::make($request->password),
         ]);
 
