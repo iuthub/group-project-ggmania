@@ -36,7 +36,9 @@
     @yield('content')
 </main>
 
+<div class="push"></div>
 </div>
+<div class="footer"></div>
 <footer class=" container-fluid text-white fixed-bottom">
     <div class="'container">
     <div class="container padding">
