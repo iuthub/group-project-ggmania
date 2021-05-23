@@ -52,7 +52,7 @@ class User extends Authenticatable
      */
 
     function isAdmin() {
-        $admin_email = config('settings.admin_email');
+        $admin_email = config('user.admin_email');
         if($this->email == $admin_email) return true;
         else return false;
     }
