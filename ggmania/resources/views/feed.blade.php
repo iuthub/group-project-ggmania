@@ -32,9 +32,9 @@
                 <h5>Topic:{{$article->Topic}}</h5>
 
                 <h5>Username: {{$article->username}}</h5>
-                @if (Auth::user()->isAdmin()) {
+                @if (Auth::user()->isAdmin())
                 <button><a href="{{"delete/".$article['id']}}">Delete as admin</a><a/></button>
-                }
+
                 @endif
 
                 @if(auth()->user()->username === $article->username)
