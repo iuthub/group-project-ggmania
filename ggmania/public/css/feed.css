@@ -25,6 +25,12 @@
 }
 .middle h1{
     color: #bc1215;
+    text-decoration: none;
+}
+.middle h5{
+    border: 1px solid #070000;
+    font-size: 16px;
+    text-decoration: none;
 }
 /*
 .middle table
