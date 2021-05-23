@@ -51,71 +51,18 @@ header img
     font-size: 20px;
     cursor: pointer;
 }
-form a
-{
-    cursor: pointer;
-}
+
 footer
 {
-    margin-top: 50px;
+    align-items: center;
     background-color: #181818;
     color: white;
-    height: 400px;
+    height: 100px;
     width: 100%;
     position: relative;
-    display: flex;
-}
-footer p
-{
-    margin-top: 10px;
-    color: white;
-    font-size: 20px;
-}
-footer h1
-{
-    font-size: 25px;
-    text-align: center;
-    text-decoration: underline;
-}
-.footer-content , .feedback
-{
-    flex: 1;
-    padding: 25px;
-}
-.feedback
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: 20%;
-}
-.feedback input
-{
-    width: 250px;
-    font-weight: 500;
-    font-size: 20px;
-    height: 30px;
-    margin: 10px;
 
 }
 
-.feedback .message
-{
-    width: 630px;
-    height: 100px;
-    padding-left: 10px;
-    margin-right: 10px;
-}
-.feedback .submit
-{
-    margin: 30px;
-    background-color: #01ca2a;
-    height: 50px;
-    border: 1px solid #04AA6D;
-    color: white;
-    text-align: center;
-
-}
 
 
 
