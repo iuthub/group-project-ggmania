@@ -5,27 +5,26 @@
 @foreach($all_articles as $article)
 
     <div class="middle">
+        <div class="col-md-3">
+            <img src="articleimg.jpg" class="img-fluid" alt="article img">
 
+        </div>
     <div class="col-lg-8 col-md-12 col-sm-12">
 <h1>{{$article->Title}}</h1>
 <h5>Content</h5>
-<h5>Created at</h5>
-<h5>Topic</h5>
-{{$article->Title}}
+        <p>{{$article->Content}}</p>
         @if (strlen ($article->Content)>100){{substr($article->Content, 0, 100)}}...
         @else
             {{$article->Content}}
-    @endif
+        @endif
+<h5>Created at: {{$article->created_at->format('Y-m-d')}}</h5>
+<h5>Topic:{{$article->Topic}}</h5>
 
-<td>{{$article->created_at->format('Y-m-d')}}</td>
-<td>{{$article->Topic}}</td>
-        <h5>{{$article->username}}</h5>
-             --}}
+        <h5>Username: {{$article->username}}</h5>
 @if (auth()->user()->username === $article->username)
 <button><a href="{{"delete/".$article['id']}}">Delete</a><a/></button>
         @endif
-</div>
-    </div>
+</div></div>
 
 
 @endforeach
