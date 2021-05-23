@@ -20,7 +20,7 @@
             <div class="col-lg-8 col-md-12 col-sm-12">
                 <a href="{{"feed/".$article['id']}}"><h1>{{$article->Title}}</h1></a>
 
-                @if (strlen ($article->Content)>600){{substr($article->Content, 0, 600)}}...
+                @if (strlen ($article->Content)>240){{substr($article->Content, 0, 240)}}...
                 @else
                     {{$article->Content}}
                 @endif
