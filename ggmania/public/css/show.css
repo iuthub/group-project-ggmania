@@ -1,14 +1,23 @@
-body{
-    height: 100vh;
+* {
     font-family: Manrope;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-}
-*{
 
 }
+html, body {
+
+
+
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px;
+}
+.footer, .push {
+    height: 142px;
+}
+
 header{
     background-color: #181818;
     width: 100%;
@@ -59,3 +68,4 @@ footer
 
     background-color: #0a0a0a;
 }
+
