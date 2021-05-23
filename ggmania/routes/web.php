@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminUserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,12 +39,15 @@ Route::get('/add_article', function () {
 
 Route::post('/add_article', 'ArticleController@addArticle')->name('addarticle')->middleware(['auth']);
 
-
 Route::get('/feed/{article}', 'ArticleController@show')->name('showarticle')->middleware(['auth']);
 
 Route::get('/feed', 'ArticleController@showArticle')->middleware(['auth']);
 
 Route::get('/delete/{id}', 'ArticleController@delete')->middleware(['auth']);
+
+Route::get('/user/create_admin/{id}', [AdminUserController::class, 'create'])->middleware(['auth']);
+
+Route::get('/user/delete_admin/{id}', [AdminUserController::class, 'delete'])->middleware(['auth']);
 
 Route::get('/feedback', function () {
     return view('/feedback');
