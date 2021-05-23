@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use App\Models\Article;
 use Illuminate\Http\Request;
 
@@ -42,10 +43,15 @@ class ArticleController extends Controller
 
 
     public function delete($id)
-    { $data=Article::all();
-      $data=Article::find($id);
-      $data->delete();
-      return redirect()->back()->with('deleted','Your article has been deleted');
+    {
+        if (Auth::check() && Auth::user()->isAdmin()) {
+            $data = Article::all();
+            $data = Article::find($id);
+            $data->delete();
+            return redirect()->back()->with('deleted', 'Your article has been deleted');
+        }    else {
+            return redirect()->back()->with('detail', 'You are not Admin');
+        }
     }
 }
 
