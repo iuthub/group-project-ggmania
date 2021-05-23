@@ -3,6 +3,10 @@
     <div class="arttop"><h1>Articles</h1></div>
     <link rel="stylesheet" href="{{ asset('/css/feed.css') }}"/>
     <div class="flash-message">
+        @if(Session::has('deleted'))
+            <div class="alert alert-success" role="alert">
+                {{Session::get('deleted')}}
+                @endif
         @if(Session::has('message_sent'))
             <div class="alert alert-success" role="alert">
                 {{Session::get('message_sent')}}
@@ -44,11 +48,6 @@
     <div class="flash-message">
 
     <div>
-        @if(Session::has('deleted'))
-            <div class="alert alert-success" role="alert">
-                {{Session::get('deleted')}}
 
-            </div>
-    </div>
-    @endif
+
 @endsection
